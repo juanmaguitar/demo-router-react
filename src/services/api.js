@@ -8,10 +8,14 @@ const players = [
 ]
 
 export const getPlayers = () => {
-  return players
+  return new Promise( (resolve, reject) => {
+    resolve(players)
+  })
 }
 
 export const getPlayerById = idPlayer => {
-  const isPlayer = p => p.number === idPlayer
-  return players.find(isPlayer)
+  return new Promise( (resolve, reject) => {
+    const isPlayer = p => p.number === idPlayer
+    resolve(players.find(isPlayer))
+  })
 }
