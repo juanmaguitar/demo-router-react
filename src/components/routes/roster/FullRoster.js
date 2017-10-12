@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import { getPlayers } from '../services/api'
+import { getPlayers } from '../../../services/api'
 
 class FullRoster extends Component {
   constructor() {
@@ -12,12 +12,10 @@ class FullRoster extends Component {
   }
 
   componentDidMount() {
-
     getPlayers()
       .then( players => {
         this.setState({ players })
       })
-
   }
 
   render() {

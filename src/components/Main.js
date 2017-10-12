@@ -3,9 +3,9 @@ import { Switch, Route } from 'react-router-dom'
 
 import './Main.css'
 
-import Home from './Home'
-import Roster from './Roster'
-import Schedule from './Schedule'
+import Home from './routes/root/Home'
+import Roster from './routes/root/Roster'
+import Schedule from './routes/root/Schedule'
 
 const Main = () => (
   <div className="Main">

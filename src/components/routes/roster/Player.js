@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import { getPlayerById } from '../services/api'
+import { getPlayerById } from '../../../services/api'
 
 class Player extends Component {
   constructor() {
